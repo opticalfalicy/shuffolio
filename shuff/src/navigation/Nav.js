@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../sass/layout/Nav.sass"
+
 export default class Nav extends React.Component{
 
     render(){
@@ -7,7 +9,7 @@ export default class Nav extends React.Component{
             <div className="nav-main">
                 <ul className="nav-items">
                     <li>
-                        Home
+                        About
                     </li>
                     <li>
                         Media

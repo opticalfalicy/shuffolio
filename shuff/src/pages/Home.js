@@ -1,5 +1,5 @@
 import React from 'react';
-import {PgRight} from '../components'
+import {PgRight, PgLeft, More} from '../components'
 import '../sass/pages/Home.sass'
 
 export default class Home extends React.Component {
@@ -10,8 +10,10 @@ export default class Home extends React.Component {
     render (){
         return(
             <div className="home-div">
-                <div className="">
-                    <PgRight />>
+                <div className="home-slide">
+                <PgLeft />
+                <More />
+                <PgRight />
                 </div>
                 
 
