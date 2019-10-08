@@ -5,7 +5,7 @@ export default class Nav extends React.Component{
     render(){
         return(
             <div className="nav-main">
-                <ul>
+                <ul className="nav-items">
                     <li>
                         Home
                     </li>
