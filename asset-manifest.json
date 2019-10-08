@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/shuffolio/static/css/main.e8a35b55.chunk.css",
-    "main.js": "/shuffolio/static/js/main.688ceda1.chunk.js",
-    "main.js.map": "/shuffolio/static/js/main.688ceda1.chunk.js.map",
-    "runtime-main.js": "/shuffolio/static/js/runtime-main.9b18be50.js",
-    "runtime-main.js.map": "/shuffolio/static/js/runtime-main.9b18be50.js.map",
-    "static/js/2.ddce5800.chunk.js": "/shuffolio/static/js/2.ddce5800.chunk.js",
-    "static/js/2.ddce5800.chunk.js.map": "/shuffolio/static/js/2.ddce5800.chunk.js.map",
-    "index.html": "/shuffolio/index.html",
-    "precache-manifest.a493f390cbac779820deb16000355b3f.js": "/shuffolio/precache-manifest.a493f390cbac779820deb16000355b3f.js",
-    "service-worker.js": "/shuffolio/service-worker.js",
-    "static/css/main.e8a35b55.chunk.css.map": "/shuffolio/static/css/main.e8a35b55.chunk.css.map",
-    "static/media/Home.sass": "/shuffolio/static/media/bus.70be7fbc.JPG",
-    "static/media/logo.svg": "/shuffolio/static/media/logo.25bf045c.svg"
+    "main.css": "/shuffolio/shuff/static/css/main.2d835bed.chunk.css",
+    "main.js": "/shuffolio/shuff/static/js/main.eb7ccb26.chunk.js",
+    "main.js.map": "/shuffolio/shuff/static/js/main.eb7ccb26.chunk.js.map",
+    "runtime-main.js": "/shuffolio/shuff/static/js/runtime-main.623bef43.js",
+    "runtime-main.js.map": "/shuffolio/shuff/static/js/runtime-main.623bef43.js.map",
+    "static/js/2.ddce5800.chunk.js": "/shuffolio/shuff/static/js/2.ddce5800.chunk.js",
+    "static/js/2.ddce5800.chunk.js.map": "/shuffolio/shuff/static/js/2.ddce5800.chunk.js.map",
+    "index.html": "/shuffolio/shuff/index.html",
+    "precache-manifest.f7042430f58e4578c995b58cbba1330b.js": "/shuffolio/shuff/precache-manifest.f7042430f58e4578c995b58cbba1330b.js",
+    "service-worker.js": "/shuffolio/shuff/service-worker.js",
+    "static/css/main.2d835bed.chunk.css.map": "/shuffolio/shuff/static/css/main.2d835bed.chunk.css.map",
+    "static/media/Home.sass": "/shuffolio/shuff/static/media/bus.70be7fbc.JPG",
+    "static/media/logo.svg": "/shuffolio/shuff/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b18be50.js",
+    "static/js/runtime-main.623bef43.js",
     "static/js/2.ddce5800.chunk.js",
-    "static/css/main.e8a35b55.chunk.css",
-    "static/js/main.688ceda1.chunk.js"
+    "static/css/main.2d835bed.chunk.css",
+    "static/js/main.eb7ccb26.chunk.js"
   ]
 }
