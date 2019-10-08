@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shuffolio/static/css/main.e8a35b55.chunk.css",
+    "main.js": "/shuffolio/static/js/main.688ceda1.chunk.js",
+    "main.js.map": "/shuffolio/static/js/main.688ceda1.chunk.js.map",
+    "runtime-main.js": "/shuffolio/static/js/runtime-main.9b18be50.js",
+    "runtime-main.js.map": "/shuffolio/static/js/runtime-main.9b18be50.js.map",
+    "static/js/2.ddce5800.chunk.js": "/shuffolio/static/js/2.ddce5800.chunk.js",
+    "static/js/2.ddce5800.chunk.js.map": "/shuffolio/static/js/2.ddce5800.chunk.js.map",
+    "index.html": "/shuffolio/index.html",
+    "precache-manifest.a493f390cbac779820deb16000355b3f.js": "/shuffolio/precache-manifest.a493f390cbac779820deb16000355b3f.js",
+    "service-worker.js": "/shuffolio/service-worker.js",
+    "static/css/main.e8a35b55.chunk.css.map": "/shuffolio/static/css/main.e8a35b55.chunk.css.map",
+    "static/media/Home.sass": "/shuffolio/static/media/bus.70be7fbc.JPG",
+    "static/media/logo.svg": "/shuffolio/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b18be50.js",
+    "static/js/2.ddce5800.chunk.js",
+    "static/css/main.e8a35b55.chunk.css",
+    "static/js/main.688ceda1.chunk.js"
+  ]
+}
