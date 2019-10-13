@@ -1,36 +1,41 @@
 @import '../utilities/mixins.sass'
     
 .home-div
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
+    @include fullVWH
     // background-image: url('../media/bus.JPG')
     // background-repeat: no-repeat;
     // background-size: 90%
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter
+
     
     .home-carousel
-        // background-image: url('../media/bus.JPG')
-        // background-repeat: no-repeat;
-        // background-size: 100% 100%
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include fullVWH
+        @include flexCenter
+
+        .control-arrow 
+            background: black;
+            top: 5vh
+            height: 90vh
+
+        .carousel .control-prev.control-arrow:before
+            border-right: 8px solid gray
+        
+        .carousel .control-next.control-arrow:after 
+            border-left: 8px solid red
+        // .control-arrow:hover 
+        //     opacity: .9
 
         .carousel-item
             @include flexCenter
-            // z-index: 0;
-            // display: none
+            height: 100vh
         
             .carousel-img
                 position: absolute
                 z-index: 0
-            
+                height: 90vh
                 .more-button
-                    // position: absolute
                     z-index: 1
 
-    
+

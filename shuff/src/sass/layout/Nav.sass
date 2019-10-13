@@ -1,6 +1,16 @@
+@import '../utilities/mixins.sass'
+    
 .nav-main
-    position: absolute;
-    width: 100vw;
+    @include flexCenter
+    position: absolute
+    width: 100vw
+    height: 5vh
+
+    z-index: 1
     .nav-items
-        display: flex;
-        justify-content: space-evenly;
+        display: flex
+        justify-content: space-evenly
+        width: 100vw
+        z-index: 1
+        color: white
+        cursor: pointer
