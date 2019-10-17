@@ -14,29 +14,32 @@ export default class Home extends React.Component {
     constructor(){
         super();
         this.state = {
-            show: false
+            modal: false
         };
     }
 
     showModal = e => {
         this.setState({
-            show: true
+            modal: true
+            
         });
 
 
-        console.log('show')
+        console.log('modal')
     };
 
 
     render (){
+        console.log(this.state.modal)
         return(
+
             <div className="home-div">
              {/* <div className="home-slide">  */}
             <Carousel className="home-carousel" showThumbs={false}>
                     <div className="carousel-item">
                         <img className="carousel-img" src={bus}></img>
-                        <More onClick={e => {this.showModal();}} className="more-button" />
-                        <Modal show={this.state.show} />
+                        <More showModal={this.showModal.bind(this)} modal={this.state.modal}/>
+                        <Modal modal={this.state.modal} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={sky}/>

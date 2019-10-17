@@ -4,32 +4,74 @@ import Modal from './Modal'
 import '../sass/components/more.sass'
 
 export default class More extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-            show: false
+            modal: this.props.modal
         };
     }
 
     // showModal = e => {
     //     this.setState({
-    //         show: true
+    //         modal: true
     //     });
 
 
-    //     console.log('show')
+    //     console.log('modal')
     // };
     
     render (){
+
+        if(this.props.modal === true){
+            return null
+        }
+
+        else
+
+        
         return(
             <div className="more-div">
-                <div className="more-button">
+                {/* <div className="more-button" onClick={e => {this.showModal()}}> */}
+                <div className="more-button" onClick={this.props.showModal}>
                     More
                 </div>
-                    {/* <Modal show={this.state.show} /> */}
+                    {/* <Modal modal={this.state.modal} /> */}
                 
 
     </div>
     );
 }
 }
+
+
+
+
+
+// if(this.props.modal === true){
+//     return(
+// <div className="more-div-disabled">
+//  {/* <div className="more-button" onClick={e => {this.showModal()}}> */}
+//  <div className="more-button-disabled" onClick={this.props.showModal}>
+//      More
+//  </div>
+//      {/* <Modal modal={this.state.modal} /> */}
+ 
+
+// </div>
+// );
+// }
+
+// else if (this.props.modal !== true)
+
+// return(
+// <div className="more-div">
+//  {/* <div className="more-button" onClick={e => {this.showModal()}}> */}
+//  <div className="more-button" onClick={this.props.showModal}>
+//      More
+//  </div>
+//      {/* <Modal modal={this.state.modal} /> */}
+ 
+
+// </div>
+// );
+// }

@@ -1,19 +1,24 @@
 import React from 'react';
 
+import '../sass/components/modal.sass';
+
 export default class Modal extends React.Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
     }
 
     render(){
-        if(!this.props.show){
+        if(this.props.modal === false){
             return null;
         }
-        else{console.log('showing')}
+        else
 
         return(
-            <div>Modal</div>
+            <div className="modal-div">
+                <div className="modal-exit">X</div>
+                <div className="modal-pics"></div>
+            </div>
         );
     }
 }
