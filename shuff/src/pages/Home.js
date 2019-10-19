@@ -14,13 +14,33 @@ export default class Home extends React.Component {
     constructor(){
         super();
         this.state = {
-            modal: false
+            aModal: false,
+            bModal: false,
+            cModal: false
         };
     }
 
-    showModal = e => {
+    showAModal = e => {
         this.setState({
-            modal: true
+            aModal: true
+            
+        });
+
+
+        console.log('modal')
+    };
+    showBModal = e => {
+        this.setState({
+            bModal: true
+            
+        });
+
+
+        console.log('modal')
+    };
+    showCModal = e => {
+        this.setState({
+            cModal: true
             
         });
 
@@ -38,16 +58,18 @@ export default class Home extends React.Component {
             <Carousel className="home-carousel" showThumbs={false}>
                     <div className="carousel-item">
                         <img className="carousel-img" src={bus}></img>
-                        <More showModal={this.showModal.bind(this)} modal={this.state.modal}/>
-                        <Modal modal={this.state.modal} />
+                        <More showAModal={this.showAModal.bind(this)} modal={this.state.aModal}/>
+                        <Modal modal={this.state.aModal} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={sky}/>
-                        <More className="more-button" />
+                        <More showBModal={this.showBModal.bind(this)} modal={this.state.bModal}  />
+                        <Modal modal={this.state.bModal} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={rund}/>
-                        <More className="more-button" />
+                        <More showCModal={this.showCModal.bind(this)} modal={this.state.cModal}  />
+                        <Modal modal={this.state.cModal} />
                     </div>  
                     </Carousel>
                 {/* // <More></More> */}
