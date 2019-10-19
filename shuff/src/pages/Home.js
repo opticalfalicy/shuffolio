@@ -14,19 +14,54 @@ export default class Home extends React.Component {
     constructor(){
         super();
         this.state = {
-            modal: false
+            modal: false,
+            slideA: false,
+            slideB: false,
+            slideC: false
         };
     }
 
-    showModal = e => {
+    showAModal = e => {
+        let name = e.target.getAttribute('name')
+
         this.setState({
-            modal: true
+            modal: true,
+            slideA: true
+            
+        });
+        console.log('modal')
+
+    };
+    showBModal = e => {
+        this.setState({
+            modal: true,
+            slideB: true
             
         });
 
 
         console.log('modal')
     };
+    showCModal = e => {
+        this.setState({
+            modal: true,
+            slideC: true
+            
+        });
+
+
+        console.log('modal')
+    };
+
+    closeModal = e => {
+        console.log('close');
+        this.setState({
+            modal: false,
+            slideA: false,
+            slideB: false,
+            slideC: false
+        })
+    }
 
 
     render (){
@@ -38,16 +73,18 @@ export default class Home extends React.Component {
             <Carousel className="home-carousel" showThumbs={false}>
                     <div className="carousel-item">
                         <img className="carousel-img" src={bus}></img>
-                        <More showModal={this.showModal.bind(this)} modal={this.state.modal}/>
-                        <Modal modal={this.state.modal} />
+                        <More showModal={this.showAModal.bind(this)} modal={this.state.modal} />
+                        <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"A"} content={this.state.slideA} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={sky}/>
-                        <More className="more-button" />
+                        <More showModal={this.showBModal.bind(this)} modal={this.state.modal} />
+                        <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"B"} content={this.state.slideB} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={rund}/>
-                        <More className="more-button" />
+                        <More showModal={this.showCModal.bind(this)} modal={this.state.modal} />
+                        <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"C"} content={this.state.slideC} />
                     </div>  
                     </Carousel>
                 {/* // <More></More> */}
