@@ -2,10 +2,34 @@ import React from 'react';
 
 import '../sass/components/modal.sass';
 
+let car2 = '../media/car2.JPG';
+let dakota = './dakota.JPG';
+let car = './car.JPG';
+
+
+let urls = [
+    car2,
+    car,
+    dakota
+
+]
+
 export default class Modal extends React.Component {
 
     constructor(props){
         super(props);
+        this.state = {
+            imageUrls: urls
+        }
+    }
+
+
+    renderImgA(imgUrl){
+        return(
+            <div className="img-div">
+                <img className="img-item" src={require(`../media/car2.JPG`)}></img>
+            </div>
+        )   
     }
 
     render(){
@@ -24,12 +48,20 @@ export default class Modal extends React.Component {
         //         </div>
         //     );
 
-        // }
-        let slide;
+        // // }
+        // let img, img1, img2, img3;
 
-        if(this.props.name === "A"){
+        let imgDiv;
+
+        if(this.props.name === "A" && this.props.modal !== false){
             
-            return slide = "yo"
+            // imgDiv = this.state.imageUrls.map(imgUrl => this.renderImgA(imgUrl))
+            imgDiv = <div className="img-div">
+                <img className="img-item" src={require(`../media/car2.JPG`)}></img> 
+                <img className="img-item" src={require(`../media/car.JPG`)}></img> 
+                <img className="img-item" src={require(`../media/dakota.JPG`)}></img> 
+
+            </div>
         
             console.log('props', this.props)
         }
@@ -39,6 +71,8 @@ export default class Modal extends React.Component {
             <div className="modal-div">
                 <div className="modal-exit" onClick={this.props.closeModal}>X</div>
                 <div className="modal-pics"></div>
+                {/* <img className="img-item" src={car2} /> */}
+                {imgDiv}
             </div>
         );
 
