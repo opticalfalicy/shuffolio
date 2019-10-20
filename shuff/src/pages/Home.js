@@ -14,14 +14,21 @@ export default class Home extends React.Component {
     constructor(){
         super();
         this.state = {
+<<<<<<< HEAD
             modal: false,
             slideA: false,
             slideB: false,
             slideC: false
+=======
+            aModal: false,
+            bModal: false,
+            cModal: false
+>>>>>>> master
         };
     }
 
     showAModal = e => {
+<<<<<<< HEAD
         let name = e.target.getAttribute('name')
 
         this.setState({
@@ -36,6 +43,28 @@ export default class Home extends React.Component {
         this.setState({
             modal: true,
             slideB: true
+=======
+        this.setState({
+            aModal: true
+            
+        });
+
+
+        console.log('modal')
+    };
+    showBModal = e => {
+        this.setState({
+            bModal: true
+            
+        });
+
+
+        console.log('modal')
+    };
+    showCModal = e => {
+        this.setState({
+            cModal: true
+>>>>>>> master
             
         });
 
@@ -73,6 +102,7 @@ export default class Home extends React.Component {
             <Carousel className="home-carousel" showThumbs={false}>
                     <div className="carousel-item">
                         <img className="carousel-img" src={bus}></img>
+<<<<<<< HEAD
                         <More showModal={this.showAModal.bind(this)} modal={this.state.modal} />
                         <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"A"} content={this.state.slideA} />
                     </div>  
@@ -85,6 +115,20 @@ export default class Home extends React.Component {
                         <img className="carousel-img" src={rund}/>
                         <More showModal={this.showCModal.bind(this)} modal={this.state.modal} />
                         <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"C"} content={this.state.slideC} />
+=======
+                        <More showAModal={this.showAModal.bind(this)} modal={this.state.aModal}/>
+                        <Modal modal={this.state.aModal} />
+                    </div>  
+                    <div className="carousel-item">
+                        <img className="carousel-img" src={sky}/>
+                        <More showBModal={this.showBModal.bind(this)} modal={this.state.bModal}  />
+                        <Modal modal={this.state.bModal} />
+                    </div>  
+                    <div className="carousel-item">
+                        <img className="carousel-img" src={rund}/>
+                        <More showCModal={this.showCModal.bind(this)} modal={this.state.cModal}  />
+                        <Modal modal={this.state.cModal} />
+>>>>>>> master
                     </div>  
                     </Carousel>
                 {/* // <More></More> */}

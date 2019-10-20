@@ -1,3 +1,15 @@
 # shuffolio
 
-In progress hotography portfolio for @zuneonshuffle
+photography portfolio for @zuneonshuffle. experiment in minimalist web design.
+
+clone the repo
+
+cd shuff
+
+run "yarn" in your terminal to install
+
+run "yarn start" to run
+
+deployment soon.
+
+
