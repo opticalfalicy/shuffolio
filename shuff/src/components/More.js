@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './ModalA'
+import Modal from './Modal'
 
 import '../sass/components/more.sass'
 
