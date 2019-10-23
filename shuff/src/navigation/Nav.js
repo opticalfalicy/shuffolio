@@ -7,7 +7,7 @@ export default class Nav extends React.Component{
     render(){
         return(
             <div className="nav-main">
-                <ul className="nav-items">
+                {/* <ul className="nav-items">
                     <li>
                         About
                     </li>
@@ -17,7 +17,7 @@ export default class Nav extends React.Component{
                     <li>
                         Contact
                     </li>
-                </ul>
+                </ul> */}
             </div>
         )
     }

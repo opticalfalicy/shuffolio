@@ -3,23 +3,34 @@
     height: 90vh
     background: black
     z-index: 0
-    animation: 4s linear modIn
+    animation: .5s linear modIn
     color: white
 
     .img-div
-        width: 80vw
+        width: 100vw
         height: 80vh
         display: flex
-        justify-content: space-between
+        justify-content: space-around
+        align-items: center
+        align-content: space-evenly
         flex-wrap: wrap
         .img-item
             // width: 25px?
             height: 30vh
-            width: 40vw
+            width: 20vw
             z-index: 0
+    
+        .insta-img
+            height: 60vh
+            width: 20vw
+            // padding: 2vw 2.5vh 4vw 2.5vh
+            // margin: 2vw 2.5vh
+            // border: 1px /solid white
     // .modal-pics
+        
     //     height: 10vh
     //     width: 25vw
+
 
 @keyframes modIn
     0%
