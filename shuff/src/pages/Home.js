@@ -65,25 +65,35 @@ export default class Home extends React.Component {
 
 
     render (){
+
+        let arrowControl;
+
+        if(this.state.modal === false){
+            arrowControl = "arrowOn"
+        }
+        if(this.state.modal === true){
+            arrowControl = "arrowOff"
+        }
+
         console.log(this.state.modal)
         return(
 
             <div className="home-div">
+                        <More showModal={this.showAModal.bind(this)} modal={this.state.modal} />
+                        <More showModal={this.showBModal.bind(this)} modal={this.state.modal} />
+                        <More showModal={this.showCModal.bind(this)} modal={this.state.modal} />
              {/* <div className="home-slide">  */}
-            <Carousel className="home-carousel" showThumbs={false}>
+            <Carousel className={`home-carousel ${arrowControl}`} showThumbs={false}>
                     <div className="carousel-item">
                         <img className="carousel-img" src={bus}></img>
-                        <More showModal={this.showAModal.bind(this)} modal={this.state.modal} />
                         <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"A"} content={this.state.slideA} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={sky}/>
-                        <More showModal={this.showBModal.bind(this)} modal={this.state.modal} />
                         <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"B"} content={this.state.slideB} />
                     </div>  
                     <div className="carousel-item">
                         <img className="carousel-img" src={rund}/>
-                        <More showModal={this.showCModal.bind(this)} modal={this.state.modal} />
                         <Modal modal={this.state.modal} closeModal={this.closeModal.bind(this)} name={"C"} content={this.state.slideC} />
                     </div>  
                     </Carousel>
