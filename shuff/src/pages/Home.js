@@ -89,7 +89,7 @@ export default class Home extends React.Component {
         console.log(this.state.modal)
         return(<div>
             <div className="nav-main">
-            <ul className="nav-items">
+            {/* <ul className="nav-items">
                 <li>
                     About
                 </li>
@@ -99,7 +99,7 @@ export default class Home extends React.Component {
                 <li>
                     Contact
                 </li> */}
-            </ul>
+            {/* </ul> */} 
         </div>
             <div className="home-div">
              {/* <div className="home-slide">  */}
