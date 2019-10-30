@@ -3,6 +3,7 @@ import React from 'react';
 import InstagramEmbed from 'react-instagram-embed'
 
 import '../sass/components/modal.sass';
+import '../sass/components/modal.scss';
 
 let car2 = '../media/car2.JPG';
 let dakota = './dakota.JPG';
@@ -89,6 +90,7 @@ export default class Modal extends React.Component {
                 <img className="img-item" src={require(`../media/dakota.JPG`)}></img> 
                 <img className="img-item" src={require(`../media/styl.JPG`)}/>
                 <img className="img-item" src={require(`../media/garg.JPG`)}></img> 
+                <img className="img-item" src={require(`../media/base.JPG`)}></img> 
 
             </div>
         
@@ -102,6 +104,7 @@ export default class Modal extends React.Component {
             <img className="img-item" src={require(`../media/jers.JPG`)}></img> 
             <img className="img-item" src={require(`../media/tree.JPG`)}></img> 
             <img className="img-item" src={require(`../media/weeds.JPG`)}></img> 
+            <img className="img-item" src={require(`../media/dauph2.JPG`)}></img> 
 
         </div>
         } 
@@ -113,6 +116,7 @@ export default class Modal extends React.Component {
                 <img className="img-item" src={require(`../media/rick.JPG`)}/>
                 <img className="img-item" src={require(`../media/summ.JPG`)}/>
                 <img className="img-item" src={require(`../media/seen.JPG`)}/>
+                <img className="img-item" src={require(`../media/goat.JPG`)}/>
             </div>
         }
 
