@@ -3,7 +3,7 @@ import React from 'react';
 import InstagramEmbed from 'react-instagram-embed'
 
 import '../sass/components/modal.sass';
-import '../sass/components/modal.scss';
+// import '../sass/components/modal.scss';
 
 let car2 = '../media/car2.JPG';
 let dakota = './dakota.JPG';
@@ -121,7 +121,7 @@ export default class Modal extends React.Component {
         }
 
         else if(this.props.name === "D" && this.props.modal !== false){
-            imgDiv = <div className="img-div">
+            imgDiv = <div className="img-div insta-div">
                 {/* <img className="img-item insta-img" src={require(`../media/graf.JPG`)}></img>More */}
                 {/* <a href=>instagram://user?username=kevinandamanda</a> */}
                 <InstagramEmbed url="https://www.instagram.com/p/BxvXOP4Fgpx/"
