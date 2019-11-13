@@ -1,7 +1,5 @@
 # shuffolio
 
-<<<<<<< HEAD
-<<<<<<< c16b648d1fe165e069e139eeb877fa72c179799b
 photography portfolio for @zuneonshuffle. experiment in minimalist web design.
 
 clone the repo
@@ -12,11 +10,5 @@ run "yarn" in your terminal to install
 
 run "yarn start" to run
 
+https://zuneonshuffle.herokuapp.com/
 
-
-=======
-In progress hotography portfolio for @zuneonshuffle
->>>>>>> Master merging
-=======
-In progress hotography portfolio for @zuneonshuffle
->>>>>>> hard-coding-v2
